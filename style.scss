@@ -112,6 +112,10 @@ p {
 }
 
 /* ファーストビュー */
+.firstview{
+	overflow-x: hidden;
+}
+
 .firstview-inner {
 	position: relative;
 }
@@ -290,7 +294,9 @@ td {
 }
 
 /* お問い合わせ */
-
+.contact{
+	overflow-x: hidden;
+}
 .contact-inner {
 	position: relative;
 }
