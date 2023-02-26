@@ -13,7 +13,7 @@ body {
 }
 
 .wrapper {
-	max-width: 1040px;
+	max-width: 960px;
 	margin: 0 auto;
 	padding: 80px 40px;
 }
@@ -27,7 +27,7 @@ li {
 	list-style: none;
 }
 
-button{
+button {
 	background: none;
 	border: none;
 }
@@ -59,8 +59,11 @@ p {
 	margin-bottom: 40px;
 }
 
-.section-ul {
-	max-width: 960px;
+.arrow {
+	height: 16px;
+	width: auto;
+	margin-left: 10px;
+	vertical-align: text-top;
 }
 
 /* ここから解答させる */
@@ -73,6 +76,7 @@ p {
 	color: #ffffff;
 	background-color: #5ea9b5;
 }
+
 .header-inner {
 	width: 100%;
 	margin: 0 auto;
@@ -80,43 +84,57 @@ p {
 	justify-content: space-between;
 	align-items: center;
 }
+
 .site-title {
 	font-size: 24px;
 }
+
 .header-ul {
 	display: flex;
 	align-items: center;
 	column-gap: 20px;
 }
+
 .header-li:last-child {
 	border: 1px solid #ffffff;
-	padding: 10px 48px 10px 28px;
 	position: relative;
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
 }
 
 .header-link {
 	color: #ffffff;
 }
 
+.header-link:last-child {
+	padding: 10px 28px;
+}
+
 /* ファーストビュー */
 .firstview-inner {
 	position: relative;
 }
-.firstview-text-box {
-position: absolute;
-top: 0;
-left: 0;
-background-color: #ffffff;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-width: 30vw;
-height: 100vh;
+
+.firstview-img {
+	height: 100vh;
+}
+.firstview-text-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 30vw;
+	height: 100vh;
 }
 
-.firstview-inner::after{
-	content: ' ';
+.firstview-inner::after {
+	content: " ";
 	display: block;
 	position: absolute;
 	width: 0;
@@ -124,10 +142,8 @@ height: 100vh;
 	bottom: 0px;
 	left: 30vw;
 	z-index: 10;
-	// background-color: #D7E9ED;
 	border-bottom: 100vh solid #ffffff;
-	border-right: 15vw solid transparent;
-
+	border-right: 20vw solid transparent;
 }
 
 .firstview-title {
@@ -135,16 +151,12 @@ height: 100vh;
 	font-size: 48px;
 	font-weight: bold;
 }
+
 .firstview-text {
 	margin-top: 16px;
 	font-size: 24px;
 	width: 350px;
 }
-.firstview-img {
-height: 100vh;
-}
-
-
 
 /* サービス */
 .service {
@@ -162,9 +174,11 @@ height: 100vh;
 	align-items: center;
 	margin-bottom: 60px;
 }
+
 .service-li:last-child {
 	margin-bottom: 0;
 }
+
 .service-li:nth-child(even) {
 	flex-direction: row-reverse;
 }
@@ -176,36 +190,29 @@ height: 100vh;
 	border-left: 3px solid #5ea9b5;
 	padding-left: 24px;
 }
+
 .service-text {
 	margin-top: 40px;
 	font-size: 18px;
 	text-align: left;
 }
-.service-center {
+
+.service-btn {
+	margin: 0 auto;
 	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 10px;
 }
 .service-link {
-	margin-top: 34px;
 	color: #ffffff;
 	background-color: #5ea9b5;
-	padding: 10px 38px;
 	display: inline-block;
-	text-align: center;
-	position: relative;
+	margin: 34px auto 0;
+	padding: 10px 38px;
 }
-.service-link::before {
-	content: "";
-	width: 6px;
-	height: 6px;
-	border: 0px;
-	border-top: solid 2px #ffffff;
-	border-right: solid 2px #ffffff;
-	transform: rotate(45deg);
-	position: absolute;
-	top: 50%;
-	right: 20px;
-	margin-top: -4px;
-}
+
 /* 制作の流れ */
 .flow-ul {
 	display: flex;
@@ -231,87 +238,68 @@ height: 100vh;
 	align-items: center;
 	border-radius: 50%;
 }
+
 /* プラン */
-.plan{
-    background-color:#D7E9ED;
+.plan {
+	background-color: #d7e9ed;
 }
-.plan-table{
+
+.plan-table {
 	text-align: center;
 	border-spacing: 8px;
 }
 
 // 優先度は使わない方が良い？？
 // 要素に直接指定してもOK?
-.plan th{
-	background-color: #5EA9B5;
+.plan th {
+	background-color: #5ea9b5;
 	color: white;
 }
-.plan td{
-	background-color: #F4F4F4;
+
+.plan td {
+	background-color: #f4f4f4;
 }
 
-.plan .table-header-first{
-	background-color: #F4F4F4;
+.plan .table-header-first {
+	background-color: #f4f4f4;
 	color: #333333;
 }
 
-.plan th,td{
+.plan th,
+td {
 	height: 70px;
-	width:234px;
+	width: 234px;
 }
 
 /* 会社概要 */
-
-.company-dl{
+.company-dl {
 	display: flex;
-	border-bottom: 1px solid #CACACA;
+	border-bottom: 1px solid #cacaca;
 }
 
-.company-dt{
-	color: #5EA9B5;
+.company-dt {
+	color: #5ea9b5;
 	font-weight: bold;
 	padding: 24px 12px;
 	width: 240px;
 }
 
-.company-dd{
+.company-dd {
 	padding: 24px 12px;
 }
 
 /* お問い合わせ */
 
-.contact{
-	min-height: 688px;
-}
-.contact-inner{
+.contact-inner {
 	position: relative;
 }
 
-
-.contact-inner::after{
-	content: ' ';
-	display: block;
-	position: absolute;
-	width: 0;
-	height: 100%;
-	bottom: 0px;
-	right: 440px;
-	z-index: 10;
-	// background-color: #D7E9ED;
-	border-bottom: 688px solid #D7E9ED;
-	border-left: 220px solid transparent;
-
+.contact-img {
+	width: auto;
+	height: 688px;
 }
 
-.contact-img{
-width: auto;
-height: 688px;
-}
-.contact-text-box{
-background-color: #D7E9ED;
-}
-
-.contact-text-box{
+.contact-text-box {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -319,61 +307,75 @@ background-color: #D7E9ED;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	width: 440px;
+	width: 30vw;
 	height: 100%;
+	background-color: #d7e9ed;
 }
 
-.contact-title{
-color: #5EA9B5;
-margin-bottom: 16px;
+.contact-inner::after {
+	content: " ";
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 100%;
+	bottom: 0px;
+	right: 30vw;
+	z-index: 10;
+	// background-color: #D7E9ED;
+	border-bottom: 688px solid #d7e9ed;
+	border-left: 20vw solid transparent;
 }
 
+.contact-title {
+	color: #5ea9b5;
+	margin-bottom: 16px;
+}
 
-
-
-.contact-text{
+.contact-text {
 	font-size: 20px;
 	margin-bottom: 40px;
 }
 
-.contact-btn-wrapper{
-display: flex;
-align-items: center;
-column-gap: 10px;
-border-radius: 100px;
-background-color: #ffffff;
-padding: 12px 32px;
+.contact-btn {
+	background-color: #ffffff;
+	border-radius: 100px;
 }
 
-.contact-btn{
+.contact-link {
+	display: inline-block;
 	font-size: 24px;
-color: #5EA9B5;
-font-size: 24px;
+	color: #5ea9b5;
+	font-size: 24px;
+	padding: 12px 32px;
+}
 
+.contact-arrow {
+	margin-top: 5px;
 }
-.contact-arrow{
-	width: 10px;
-}
+
 /* フッター */
-.footer{
-	background-color: #5EA9B5;
+.footer {
+	background-color: #5ea9b5;
 	color: #ffffff;
 }
-.footer-inner{
+
+.footer-inner {
 	padding: 63px 0px;
 }
+
 .footer-ul {
 	display: flex;
-justify-content: center;
-text-align: center;
-margin-bottom: 40px;
-}
-.footer-li{
-	padding: 0 16px;
-	border-left: 1px solid #FFFFFF;
-	border-right: 1px solid #FFFFFF;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 40px;
 }
 
-.footer-copyright{
-text-align: center;
+.footer-li {
+	padding: 0 16px;
+	border-left: 1px solid #ffffff;
+	border-right: 1px solid #ffffff;
+}
+
+.footer-copyright {
+	text-align: center;
 }
