@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corporate site</title>
+    <title>Corporate</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="reset.css">
 
@@ -22,7 +22,8 @@
                     <li class="header-li"><a class="header-link" href="#flow">制作の流れ</a></li>
                     <li class="header-li"><a class="header-link" href="#plan">プラン</a></li>
                     <li class="header-li"><a class="header-link" href="#company">会社概要</a></li>
-                    <li class="header-li"><a class="header-link" href="#contact">お問い合わせ</a></li>
+                    <li class="header-li">
+                        <a class="header-link" href="#contact">お問い合わせ</a> <img src="https://github.com/kasuyaofcb/code-lesson_corporatesite/blob/main/img/arrow-img.png?raw=true" alt="矢印" class="contact-arrow"></li>
                 </ul>
             </nav>
         </div>
@@ -33,28 +34,25 @@
         <!-- ファーストビュー -->
         <section class="firstview">
             <div class="firstview-inner">
+                    <img class="firstview-img"
+                        src="https://raw.githubusercontent.com/kasuyaofcb/code-lesson_corporatesite/f40769b945c681aefb98ecd8b97760d19aa83df3/img/firstview-img.png"
+                        alt="ファーストビュー">
                 <div class="firstview-text-box">
                     <h2 class="firstview-title">Corporate</h2>
                     <p class="firstview-text">集客できるWEBサイトなら<br>Corporateへお任せください！</p>
-                </div>
-                <div class="firstview-img-box">
-                    <div class="firstview-img-cover"></div>
-                    <img class="firstview-img"
-                        src="https://github.com/kasuyaofcb/git-team-sample/blob/main/firstview-img.png?raw=true"
-                        alt="ファーストビュー">
                 </div>
             </div>
         </section>
 
         <!-- サービス -->
-        <section id="service" class="service">
+        <section class="service" id="service">
             <div class="service-inner wrapper">
                 <h2 class="section-title">SERVICE</h2>
                 <p class="section-subtitle">サービス</p>
                 <ul class="service-ul section-ul">
                     <li class="service-li">
 
-                        <img src="https://github.com/kasuyaofcb/git-team-sample/blob/main/service1.png?raw=true"
+                        <img src="https://raw.githubusercontent.com/kasuyaofcb/code-lesson_corporatesite/f40769b945c681aefb98ecd8b97760d19aa83df3/img/service-img1.png"
                             alt="コーディング">
                         <div class="service-text-box">
                             <h3 class="service-title">WEBサイト制作</h3>
@@ -67,7 +65,7 @@
                     </li>
                     <li class="service-li">
 
-                        <img src="https://github.com/kasuyaofcb/git-team-sample/blob/main/service2.png?raw=true"
+                        <img src="https://raw.githubusercontent.com/kasuyaofcb/code-lesson_corporatesite/f40769b945c681aefb98ecd8b97760d19aa83df3/img/service-img2.png"
                             alt="コーディング">
                         <div class="service-text-box">
                             <h3 class="service-title">WEBサイト制作</h3>
@@ -80,7 +78,7 @@
                     </li>
                     <li class="service-li">
 
-                        <img src="https://github.com/kasuyaofcb/git-team-sample/blob/main/service3.png?raw=true"
+                        <img src="https://raw.githubusercontent.com/kasuyaofcb/code-lesson_corporatesite/f40769b945c681aefb98ecd8b97760d19aa83df3/img/service-img3.png"
                             alt="コーディング">
                         <div class="service-text-box">
                             <h3 class="service-title">WEBサイト制作</h3>
@@ -95,7 +93,7 @@
             </div>
         </section>
         <!-- 制作の流れ -->
-        <section class="flow">
+        <section class="flow" id="flow">
             <div class="flow-inner wrapper">
                 <h2 class="section-title">FLOW</h2>
                 <p class="section-subtitle">制作の流れ</p>
@@ -139,7 +137,7 @@
             </div>
         </section>
         <!-- プラン -->
-        <section class="plan">
+        <section class="plan" id="plan">
             <div class="flow-inner wrapper">
                 <h2 class="section-title">PLAN</h2>
                 <p class="section-subtitle">プラン</p>
@@ -172,7 +170,7 @@
                 </div>
         </section>
         <!-- 会社概要 -->
-        <section class="company">
+        <section class="company" id="company">
             <div class="company-inner wrapper">
                 <h2 class="section-title">COMPANY</h2>
                 <p class="section-subtitle">会社概要</p>
@@ -211,20 +209,35 @@
                 </div>
         </section>
         <!-- お問い合わせ -->
-        <section class="contact">
-            <div class="firstview-inner">
-                <div class="firstview-text-box">
-                    <h2 class="firstview-title">Corporate</h2>
-                    <p class="firstview-text">集客できるWEBサイトなら<br>Corporateへお任せください！</p>
+        <section class="contact" id="contact">
+            <div class="contact-inner">
+                    <img class="contact-img"
+                        src="https://raw.githubusercontent.com/kasuyaofcb/code-lesson_corporatesite/f40769b945c681aefb98ecd8b97760d19aa83df3/img/contact-img.png"
+                        alt="コンタクト">
+                <div class="contact-text-box">
+                    <h2 class="contact-title">CONTACT</h2>
+                    <p class="contact-text">お気軽にお問い合わせください。</p>
+                    <button class="contact-btn-wrapper">
+                        <a class="contact-btn" href="#">お問い合わせはこちら</a>
+                        <img src="https://github.com/kasuyaofcb/code-lesson_corporatesite/blob/main/img/arrow-img.png?raw=true" alt="矢印" class="contact-arrow">
+                    </button>
                 </div>
-                <div class="firstview-img-box">
-                    <div class="firstview-img-cover"></div>
-                    <img class="firstview-img"
-                        src="https://github.com/kasuyaofcb/git-team-sample/blob/main/firstview-img.png?raw=true"
-                        alt="ファーストビュー">
-                </div>
+
             </div>
         </section>
+        <footer class="footer">
+            <div class="footer-inner">
+<ul class="footer-ul">
+    <li class="footer-li"><a href="#">TOP</a></li>
+    <li class="footer-li"><a href="#service">サービス</a></li>
+    <li class="footer-li"><a href="#flow">制作の流れ</a></li>
+    <li class="footer-li"><a href="#plan">プラン</a></li>
+    <li class="footer-li"><a href="#company">会社概要</a></li>
+    <li class="footer-li"><a href="#contact">お問い合わせ</a></li>
+</ul>
+<p class="footer-copyright">©︎Corporate</p>
+            </div>
+        </footer>
     </main>
 </body>
 

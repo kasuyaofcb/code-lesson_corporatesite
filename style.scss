@@ -20,10 +20,16 @@ body {
 
 a {
 	text-decoration: none;
+	color: #ffffff;
 }
 
 li {
 	list-style: none;
+}
+
+button{
+	background: none;
+	border: none;
 }
 
 img {
@@ -61,7 +67,7 @@ p {
 
 /* ヘッダー */
 .header {
-	padding: 22px 0;
+	padding: 22px 40px;
 	display: flex;
 	align-items: center;
 	color: #ffffff;
@@ -69,7 +75,6 @@ p {
 }
 .header-inner {
 	width: 100%;
-	max-width: 1040px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
@@ -88,31 +93,41 @@ p {
 	padding: 10px 48px 10px 28px;
 	position: relative;
 }
-.header-li:last-child ::before {
-	content: "";
-	width: 6px;
-	height: 6px;
-	border: 0px;
-	border-top: solid 2px #ffffff;
-	border-right: solid 2px #ffffff;
-	transform: rotate(45deg);
-	position: absolute;
-	top: 50%;
-	right: 28px;
-	margin-top: -4px;
-}
+
 .header-link {
 	color: #ffffff;
 }
 
 /* ファーストビュー */
 .firstview-inner {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	position: relative;
 }
 .firstview-text-box {
-	padding-left: 8%;
+position: absolute;
+top: 0;
+left: 0;
+background-color: #ffffff;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 30vw;
+height: 100vh;
+}
+
+.firstview-inner::after{
+	content: ' ';
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 100vh;
+	bottom: 0px;
+	left: 30vw;
+	z-index: 10;
+	// background-color: #D7E9ED;
+	border-bottom: 100vh solid #ffffff;
+	border-right: 15vw solid transparent;
+
 }
 
 .firstview-title {
@@ -125,9 +140,11 @@ p {
 	font-size: 24px;
 	width: 350px;
 }
-.firstview-img-box {
-	position: relative;
+.firstview-img {
+height: 100vh;
 }
+
+
 
 /* サービス */
 .service {
@@ -259,4 +276,104 @@ p {
 
 .company-dd{
 	padding: 24px 12px;
+}
+
+/* お問い合わせ */
+
+.contact{
+	min-height: 688px;
+}
+.contact-inner{
+	position: relative;
+}
+
+
+.contact-inner::after{
+	content: ' ';
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 100%;
+	bottom: 0px;
+	right: 440px;
+	z-index: 10;
+	// background-color: #D7E9ED;
+	border-bottom: 688px solid #D7E9ED;
+	border-left: 220px solid transparent;
+
+}
+
+.contact-img{
+width: auto;
+height: 688px;
+}
+.contact-text-box{
+background-color: #D7E9ED;
+}
+
+.contact-text-box{
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 440px;
+	height: 100%;
+}
+
+.contact-title{
+color: #5EA9B5;
+margin-bottom: 16px;
+}
+
+
+
+
+.contact-text{
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+
+.contact-btn-wrapper{
+display: flex;
+align-items: center;
+column-gap: 10px;
+border-radius: 100px;
+background-color: #ffffff;
+padding: 12px 32px;
+}
+
+.contact-btn{
+	font-size: 24px;
+color: #5EA9B5;
+font-size: 24px;
+
+}
+.contact-arrow{
+	width: 10px;
+}
+/* フッター */
+.footer{
+	background-color: #5EA9B5;
+	color: #ffffff;
+}
+.footer-inner{
+	padding: 63px 0px;
+}
+.footer-ul {
+	display: flex;
+justify-content: center;
+text-align: center;
+margin-bottom: 40px;
+}
+.footer-li{
+	padding: 0 16px;
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+}
+
+.footer-copyright{
+text-align: center;
 }
