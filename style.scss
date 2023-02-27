@@ -118,10 +118,13 @@ p {
 
 .firstview-inner {
 	position: relative;
+	height: 100vh;
 }
 
 .firstview-img {
-	height: 100vh;
+	position: absolute;
+	right: 0%;
+	height: 100%;
 	width: auto;
 }
 .firstview-text-wrapper {
@@ -254,24 +257,23 @@ p {
 	border-spacing: 8px;
 }
 
-// 優先度は使わない方が良い？？
-// 要素に直接指定してもOK?
-.plan th {
+
+.plan-th {
 	background-color: #5ea9b5;
 	color: white;
 }
 
-.plan td {
+.plan-td {
 	background-color: #f4f4f4;
 }
 
-.plan .table-header-first {
+.table-th-first {
 	background-color: #f4f4f4;
 	color: #333333;
 }
 
-.plan th,
-td {
+.plan-th,
+.plan-td{
 	height: 70px;
 	width: 234px;
 }
@@ -299,11 +301,13 @@ td {
 }
 .contact-inner {
 	position: relative;
+	height: 688px;
 }
 
 .contact-img {
+	position: absolute;
+	left: 0;
 	width: auto;
-	height: 688px;
 }
 
 .contact-text-box {
